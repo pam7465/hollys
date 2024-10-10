@@ -126,6 +126,8 @@
         .sub-nav>ul>li>a:hover{
             color:#ffffff;
         }
+
+        
     </style>
 </head>
 <body>
@@ -239,5 +241,18 @@
     <footer class="footer">
         <div class="container"></div>
     </footer>
+    <!-- javaScript -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        // nav에 마우스엔터(올라가면) sub-nav 나옴
+        $('.nav').mouseenter(function(){
+            $('.sub-nav').slideDown();
+        })
+
+        // sub-nav에서 마우스리브(내려가면) sub-nav 사라짐
+        $('.sub-nav').mouseleave(function(){
+            $('.sub-nav').slideUp();
+        })
+    </script>
 </body>
 </html>
