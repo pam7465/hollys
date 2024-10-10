@@ -57,6 +57,43 @@
             flex-flow:row;
             list-style:none;
         }
+        .nav>ul>li{
+            width:160px;
+        }
+        .nav>ul>li>a{
+            display:block;
+            width:160px;
+            height:60px;
+            padding-top:10px;
+            text-decoration:none;
+        }
+        .nav>ul>li>a>span{
+            display:block;
+        }
+        .eng{
+            font-family:'Noto Sans KR';
+            font-weight:700;
+            font-size:18px;
+            color:#333333;
+            text-align:center;
+        }
+        .kor{
+            font-family:'Noto Sans KR';
+            font-size:12px;
+            color:#ffffff;
+            text-align:center;
+            opacity:0;
+            transition:opacity 0.3s;
+        }
+        .nav>ul>li:hover>a{
+            background-color:#ba000c;
+        }
+        .nav>ul>li:hover>a>.eng{
+            color:#ffffff;
+        }
+        .nav>ul>li:hover>a>.kor{
+            opacity:1;
+        }
     </style>
 </head>
 <body>
