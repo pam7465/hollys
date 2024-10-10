@@ -5,33 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>할리스</title>
     <style>
+        @font-face {
+            font-family:'Noto Sans KR';
+            src: url(./fonts/NotoSansKR-VariableFont_wght.ttf);
+        }
+
         *{
             box-sizing:border-box;
             margin:0;
             padding:0;
         }
-        .container{
+        .container,.nav{
             width:960px;
             margin:0 auto;
+        }
+
+        .header{
+            border-bottom:2px solid #ba000c;
+        }
+        .header>.container{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            align-items:flex-start;
+            padding-top:16px;
+        }
+        .q-nav01,.q-nav02{
+            display:flex;
+            flex-flow:row;
+            list-style:none;
+        }
+        .q-nav01>li{
+            margin-right:10px;
+        }
+        .q-nav02>li{
+            margin-left:16px;
+        }
+        .q-nav02>li>a{
+            font-family:'Noto Sans KR';
+            font-weight:600;
+            font-size:11px;
+            color:#666666;
+            text-decoration:none;
+        }
+        .q-nav02>li>a:hover{
+            color:#ba000c;
+            text-decoration:underline;
+        }
+        .nav>ul{
+            display:flex;
+            flex-flow:row;
+            list-style:none;
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <ul>
+            <ul class="q-nav01">
                 <li><a href="#"><img src="./images/q-menu01.png" alt="커피차 안내"></a></li>
                 <li><a href="#"><img src="./images/q-menu02.png" alt="창업설명회"></a></li>
                 <li><a href="#"><img src="./images/q-menu03.png" alt="기업특판"></a></li>
             </ul>
             <h1><a href="#"><img src="./images/logo-hollys.png" alt="할리스"></a></h1>
-            <ul>
+            <ul class="q-nav02">
                 <li><a href="#">멤버십 로그인</a></li>
                 <li><a href="#">멤버십 가입</a></li>
                 <li><a href="#">고객센터</a></li>
                 <li><a href="#">English</a></li>
             </ul>
         </div>
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="eng">Menu</span>
+                        <span class="kor">메뉴</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="eng">HOLLYS Mall</span>
+                        <span class="kor">할리스 몰</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="eng">Membership</span>
+                        <span class="kor">멤버십</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="eng">HOLLYS News</span>
+                        <span class="kor">이벤트 및 공지</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="eng">Store</span>
+                        <span class="kor">매장</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="eng">HOLLYS is</span>
+                        <span class="kor">할리스 소개</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <section class="sec sec01 main-banner"></section>
     <section class="sec sec02 contents">
