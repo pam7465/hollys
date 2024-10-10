@@ -22,6 +22,7 @@
 
         .header{
             border-bottom:2px solid #ba000c;
+            position:relative;
         }
         .header>.container{
             display:flex;
@@ -94,6 +95,25 @@
         .nav>ul>li:hover>a>.kor{
             opacity:1;
         }
+        .sub-nav{
+            position:absolute;
+            left:0;
+            right:0;
+            top:139px;
+            padding-top:16px;
+            padding-bottom:100px;
+            background-color:#666666;
+        }
+        .sub-nav>ul{
+            width:960px;
+            margin:0 auto;
+            display:flex;
+            flex-flow:row;
+            list-style:none;
+        }
+        .sub-nav>ul>li{
+            width:160px;
+        }
     </style>
 </head>
 <body>
@@ -152,6 +172,16 @@
                 </li>
             </ul>
         </nav>
+        <div class="sub-nav">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
     </header>
     <section class="sec sec01 main-banner"></section>
     <section class="sec sec02 contents">
