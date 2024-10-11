@@ -126,8 +126,18 @@
         .sub-nav>ul>li>a:hover{
             color:#ffffff;
         }
-
-        
+        .main-banner>ul{
+            position:relative;
+        }
+        .main-banner>ul>li{
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+        }
+        .main-banner>ul>.banner-latte{
+            display:none;
+        }
     </style>
 </head>
 <body>
@@ -225,7 +235,12 @@
             </ul>
         </div>
     </header>
-    <section class="sec sec01 main-banner"></section>
+    <section class="sec sec01 main-banner">
+        <ul>
+            <li class="banner-fran"><a href="#"><img src="./images/img-banner01.jpg" alt="창업설명회"></a></li>
+            <li class="banner-latte"><a href="#"><img src="./images/img-banner02.png" alt="바닐라딜라이트크림라떼"></a></li>
+        </ul>
+    </section>
     <section class="sec sec02 contents">
         <div class="container"></div>
     </section>
