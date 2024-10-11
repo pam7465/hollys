@@ -186,7 +186,41 @@
         .art-mall{
             width:495px;
             padding:20px;
-
+        }
+        .art-mall>p{
+            margin-bottom:36px;
+            padding-top:10px;
+            font-weight:600;
+            font-size:14px;
+            color:#333333;
+        }
+        .art-mall>ul{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            list-style:none;
+        }
+        .art-mall>ul>li{
+            width:150px;
+            height:120px;
+            border-right:1px dotted #999999;
+            padding:20px 26px;
+        }
+        .art-mall>ul>li:nth-child(3){
+            border-right:none;
+        }
+        .art-mall>ul>li>a>img{
+            width:96px;
+        }
+        .art-mall>ul>li>a{
+            display:block;
+            font-size:12px;
+            color:#333333;
+            text-decoration:none;
+            text-align:center;
+        }
+        .art-mall>ul>li>a>span:hover{
+            color:#ba000c;
         }
     </style>
 </head>
@@ -304,6 +338,26 @@
             <article class="art art-mall">
                 <h2><img src="./images/tit-mall.gif" alt="할리스 몰"></h2>
                 <p>할리스의 다양한 상품들을 온라인에서도 만나보세요</p>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/img-mall01.png" alt="블루베리 베이글">
+                            <span>블루베리 베이글</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/img-mall02.png" alt="소금버터 베이글">
+                            <span>소금버터 베이글</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/img-mall03.png" alt="생크림 가득 가스텔라">
+                            <span>생크림 가득 가스텔라</span>
+                        </a>
+                    </li>
+                </ul>
             </article>
             <article class="art art-store">
                 <h2><img src="./images/tit-store.gif" alt="스토어"></h2>
