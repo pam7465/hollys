@@ -159,7 +159,8 @@
             border-radius:8px;
             background-color:#999999;
         }
-        .main-banner>.pagination>.page01{
+        .main-banner>.pagination>.page01,
+        .main-banner>.pagination>span:hover{
             background-color:#ba000c;
         }
     </style>
@@ -300,18 +301,27 @@
         // .page01을 클릭하면 
         // .banner-fran을 서서희 나타난다 
         // .banner-latte를 서서희 사라진다
+        // .page01의 배경색이 #ba000c로 변경
+        // .page02의 배경색이 #999999로 변경
+
         $('.page01').click(function(){
             $('.banner-fran').fadeIn();
             $('.banner-latte').fadeOut();
+            $('.page01').css('background','#ba000c');
+            $('.page02').css('background','#999999');
         });
 
 
         // .page02를 클릭하면
-        // .banner-fran을 감추고 
-        // .banner-latte를 보여준다
+        // .banner-fran을 서서희 사라진다
+        // .banner-latte를 서서희 나타난다
+        // .page01의 배경색이 #999999로 변경
+        // .page02의 배경색이 #ba000c로 변경
         $('.page02').click(function(){
             $('.banner-fran').fadeOut();
             $('.banner-latte').fadeIn();
+            $('.page01').css('background','#999999');
+            $('.page02').css('background','#ba000c');
         });
 
     </script>
