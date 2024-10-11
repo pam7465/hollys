@@ -298,15 +298,21 @@
         })
 
         // .page01을 클릭하면 
-        // .banner-fran을 보여주고 
-        // .banner-latte를 감춘다
-        $('.page01').click();
+        // .banner-fran을 서서희 나타난다 
+        // .banner-latte를 서서희 사라진다
+        $('.page01').click(function(){
+            $('.banner-fran').fadeIn();
+            $('.banner-latte').fadeOut();
+        });
 
 
         // .page02를 클릭하면
         // .banner-fran을 감추고 
         // .banner-latte를 보여준다
-        $('.page02').click();
+        $('.page02').click(function(){
+            $('.banner-fran').fadeOut();
+            $('.banner-latte').fadeIn();
+        });
 
     </script>
 </body>
