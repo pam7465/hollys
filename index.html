@@ -127,8 +127,13 @@
             color:#ffffff;
         }
 
+
+        .sec{
+            margin-bottom:50px;
+        }
         .main-banner{
             position:relative;
+            height:484px;
         }
         .main-banner>ul{
             position:relative;
@@ -162,6 +167,26 @@
         .main-banner>.pagination>.page01,
         .main-banner>.pagination>span:hover{
             background-color:#ba000c;
+        }
+
+
+        .contents>.container{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            align-items:flex-start;
+        }
+
+        .art-fran>h2,
+        .art-store>h2{
+            padding-top:20px;
+            padding-left:20px;
+            background-color:#faf9f7;
+        }
+        .art-mall{
+            width:495px;
+            padding:20px;
+
         }
     </style>
 </head>
@@ -271,7 +296,20 @@
         </div>
     </section>
     <section class="sec sec02 contents">
-        <div class="container"></div>
+        <div class="container">
+            <article class="art art-fran">
+                <h2><img src="./images/tit-franchise.gif" alt="프랜차이즈"></h2>
+                <a href="#"><img src="./images/img-franchise.gif" alt="창업설명회 바로가기"></a>
+            </article>
+            <article class="art art-mall">
+                <h2><img src="./images/tit-mall.gif" alt="할리스 몰"></h2>
+                <p>할리스의 다양한 상품들을 온라인에서도 만나보세요</p>
+            </article>
+            <article class="art art-store">
+                <h2><img src="./images/tit-store.gif" alt="스토어"></h2>
+                <a href="#"><img src="./images/img-store.jpg" alt="스토어 바로가기"></a>
+            </article>
+        </div>
     </section>
     <section class="sec sec03 sub-banner">
         <div class="container"></div>
