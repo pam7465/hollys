@@ -126,6 +126,10 @@
         .sub-nav>ul>li>a:hover{
             color:#ffffff;
         }
+
+        .main-banner{
+            position:relative;
+        }
         .main-banner>ul{
             position:relative;
         }
@@ -137,6 +141,26 @@
         }
         .main-banner>ul>.banner-latte{
             display:none;
+        }
+        .main-banner>.pagination{
+            position:absolute;
+            left:0;
+            right:0;
+            top:400px;
+            display:flex;
+            flex-flow:row;
+            justify-content:center;
+            align-items:center;
+        }
+        .main-banner>.pagination>span{
+            width:16px;
+            height:16px;
+            margin:0 8px;
+            border-radius:8px;
+            background-color:#999999;
+        }
+        .main-banner>.pagination>.page01{
+            background-color:#ba000c;
         }
     </style>
 </head>
@@ -240,6 +264,10 @@
             <li class="banner-fran"><a href="#"><img src="./images/img-banner01.jpg" alt="창업설명회"></a></li>
             <li class="banner-latte"><a href="#"><img src="./images/img-banner02.png" alt="바닐라딜라이트크림라떼"></a></li>
         </ul>
+        <div class="pagination">
+            <span class="page01"></span>
+            <span class="page02"></span>
+        </div>
     </section>
     <section class="sec sec02 contents">
         <div class="container"></div>
