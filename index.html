@@ -241,10 +241,52 @@
         .notice>.container>.art{
             width:217.5px;
         }
-        .art-event>ul>li{
+        .art-event>ul>li,
+        .art-news>ul>li{
             display:flex;
             flex-flow:row;
             justify-content:space-between;
+            margin-bottom:6px;
+        }
+        .art-event>ul>li>a,
+        .art-news>ul>li>a{
+            font-size:13px;
+            color:#666666;
+            text-decoration:none;
+        }
+        .art-event>ul>li>a:nth-child(1),
+        .art-news>ul>li>a:nth-child(1){
+            width:160px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+
+        .art-b2b>p>a{
+            font-size:13px;
+            color:#666666;
+            text-decoration:none;
+        }
+        .art-notice>ul{
+            display:flex;
+            flex-flow:row;
+            justify-content:flex-end;
+            list-style:none;
+        }
+        .art-notice>ul>li{
+            display:flex;
+            flex-flow:column;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .art-notice>ul>li>a{
+            font-size:12px;
+            color:#666666;
+            text-decoration:none;
+        }
+        .art-notice>ul>li>a:nth-child(1){
+            padding-left:15px;
+            padding-right:15px;
         }
     </style>
 </head>
@@ -414,9 +456,39 @@
                     </li>
                 </ul>
             </article>
-            <article class="art art-b2b">2</article>
-            <article class="art art-news">3</article>
-            <article class="art art-notice">4</article>
+            <article class="art art-b2b">
+                <h2><a href="#"><img src="./images/tit-b2b.gif" alt="할리스 b2b 솔루션"></a></h2>
+                <p><a href="#">할리스는 20년의 커피 노하우를 기반으로 한 할리스 B2B 솔루션을 소개합니다</a></p>
+            </article>
+            <article class="art art-news">
+                <h2><a href="#"><img src="./images/tit-news.gif" alt="뉴스"></a></h2>
+                <ul>
+                    <li>
+                        <a href="#">[공고] 제3자 배정 유상증자 신주발행 공고</a>
+                        <a href="#">05-03</a>
+                    </li>
+                    <li>
+                        <a href="#">[공고] 소규모 합병 공고</a>
+                        <a href="#">07-10</a>
+                    </li>
+                    <li>
+                        <a href="#">[공고] 소규모합병에 따른 채권자 이의제출 공고</a>
+                        <a href="#">07-26</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="art art-notice">
+                <ul>
+                    <li>
+                        <a href="#"><img src="./images/ico-etc01.gif" alt="창업안내"></a>
+                        <a href="#">창업안내</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/ico-etc02.gif" alt="고객문의"></a>
+                        <a href="#">고객문의</a>
+                    </li>
+                </ul>
+            </article>
         </div>
     </section>
     <section class="sec sec05 sns">
