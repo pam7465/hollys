@@ -185,7 +185,19 @@
             justify-content:space-between;
             align-items:flex-start;
         }
-
+        .art-fran{
+            transition:transform 0.3s;
+        }
+        .art-fran:hover{
+            transform:scale(1.1);
+        }
+        .art-store{
+            filter:grayscale(1);
+            transition:filter 2s;
+        }
+        .art-store:hover{
+            filter:grayscale(0);
+        }
         .art-fran>h2,
         .art-store>h2{
             padding-top:20px;
@@ -220,6 +232,10 @@
         }
         .art-mall>ul>li>a>img{
             width:96px;
+            transition:transform 0.3s;
+        }
+        .art-mall>ul>li>a>img:hover{
+            transform:rotete(360deg);
         }
         .art-mall>ul>li>a{
             display:block;
