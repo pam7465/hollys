@@ -222,6 +222,30 @@
         .art-mall>ul>li>a>span:hover{
             color:#ba000c;
         }
+
+        .sub-banner>.container{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+        }
+        .sub-banner>.container>a>img{
+            width:475px;
+        }
+
+        .notice>.container{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+            align-items:flex-start;
+        }
+        .notice>.container>.art{
+            width:217.5px;
+        }
+        .art-event>ul>li{
+            display:flex;
+            flex-flow:row;
+            justify-content:space-between;
+        }
     </style>
 </head>
 <body>
@@ -366,10 +390,34 @@
         </div>
     </section>
     <section class="sec sec03 sub-banner">
-        <div class="container"></div>
+        <div class="container">
+            <a href="#"><img src="./images/img-sub-banner01.jpg" alt="할리스 멤버십"></a>
+            <a href="#"><img src="./images/img-sub-banner02.jpg" alt="할리스카드"></a>
+        </div>
     </section>
     <section class="sec sec04 notice">
-        <div class="container"></div>
+        <div class="container">
+            <article class="art art-event">
+                <h2><a href="#"><img src="./images/tit-event.png" alt="이벤트"></a></h2>
+                <ul>
+                    <li>
+                        <a href="#">[멤버십 혜택] 할리스 멤버십 회원만을 위한 10월의 혜택 안내</a>
+                        <a href="#">09-27</a>
+                    </li>
+                    <li>
+                        <a href="#">가을과 어울리는 부드러움~! 바닐라딜라이트크림 라떼 출시</a>
+                        <a href="#">09-11</a>
+                    </li>
+                    <li>
+                        <a href="#">[할리스 X KG모바일] 할리스 전용 요금제 출시</a>
+                        <a href="#">08-30</a>
+                    </li>
+                </ul>
+            </article>
+            <article class="art art-b2b">2</article>
+            <article class="art art-news">3</article>
+            <article class="art art-notice">4</article>
+        </div>
     </section>
     <section class="sec sec05 sns">
         <div class="container"></div>
